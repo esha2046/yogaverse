@@ -1,0 +1,112 @@
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.heading {
+    margin-top: 20px;
+}
+
+.content-box {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("sah.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    position: relative;
+}
+
+.content-box-heading {
+    text-align: start;
+    position: absolute;
+    left: 20px;
+}
+
+.content-box-heading ul {
+    animation: fadeInUp 2s ease;
+    font-size: large;
+}
+
+.image-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.image1 {
+    margin-top: 20px;
+    margin-left: 860px;
+    margin-bottom: 20px;
+    font-size: large;
+    width: 350px;
+    height: 250px;
+    animation: fadeInRight 2s ease;
+}
+
+.content-heading {
+    text-align: start;
+    position: absolute;
+    left: 20px;
+}
+
+.content-heading ul {
+    animation: fadeInUp 2s ease;
+    font-size: medium;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.button-left {
+    margin-left: 20px;
+}
+.button-right {
+    margin-right: 20px;
+}
+
+button {
+    background-color: grey; 
+    color: white;
+    width: 105px;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: lightgrey; 
+    color: black;
+}
+
+@keyframes fadeInUp{
+    0%{
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);  
+    }
+}
+
+@keyframes fadeInRight{
+    0%{
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0px);  
+    }
+}

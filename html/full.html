@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Display</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #randomImage {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+	button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <img id="randomImage" alt="Random Image">
+
+    <script>
+        // Array of image file paths
+        const imagePaths = [
+            'surya1.jpg',
+            'surya2.png',
+            
+            // Add more image paths as needed
+        ];
+
+        // Function to choose a random image from the array
+        function chooseRandomImage() {
+            const randomIndex = Math.floor(Math.random() * imagePaths.length);
+            return imagePaths[randomIndex];
+        }
+
+        // Display the random image
+        const randomImageElement = document.getElementById('randomImage');
+        randomImageElement.src = chooseRandomImage();
+    </script>
+<div>
+<button type="button" onclick="location.href='asana.html'">Back</button>
+</div>
+</body>
+</html>

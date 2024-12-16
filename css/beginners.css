@@ -1,0 +1,76 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.section_top{
+     width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(main_yoga.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation:fadeInRight 2s ease;
+    
+}
+
+.content{position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    
+}
+
+.content h1{
+    color: #fff;
+    font-size: 100px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: white;
+}
+.content p{ color:white;}
+
+button {
+    background-color: white; 
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: lightgrey; 
+    color: black    ;
+}
+@keyframes fadeInUp{
+    0%{
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);  
+    }
+  }
+
+  @keyframes fadeInRight{
+    0%{
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0px);  
+    }
+  }
+

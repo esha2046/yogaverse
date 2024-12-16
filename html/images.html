@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="bar.css">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0;
+	background-image: url("bgm.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+img{height:600px;width:1000px}
+.mySlides {display: none}
+img {vertical-align: middle;width:1000px;height:600px}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 30px;
+  padding: 2px 22px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 17px;
+  padding: 15px 12px;
+  position: absolute;
+  top: 8px;
+  right:16px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* for the into para*/
+
+.container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #3498db;
+      font-size: 50px;
+      text-align:center;
+    }
+
+    p,li {
+      color: #555;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="main.html">Home</a>
+    <a href="your.html">About</a>
+    <a href="contatct.html">Contact</a>
+
+   
+    <div class="dropdown">
+        <a href="#button4" class="dropbtn">Others &#9662;</a>
+        <div class="dropdown-content">
+            <a href="#subButton1">Conferences</a>
+            <a href="#subButton2">Journal</a>
+            <a href="#subButton3">Books</a>
+        </div>
+    </div>
+
+    <a href="feedback.html">Images</a>
+   
+</nav>
+ <div class="container">
+    <h1>Free Trial</h1>
+    <p>Embark on a transformative wellness journey with our <b>7-day free trial</b>, specially crafted to introduce our customers to the rejuvenating world of yoga. This exclusive offer invites you to experience a week of mindfulness, flexibility, and inner balance without any financial commitment. To kickstart your wellness adventure, simply sign up on our user-friendly platform and unlock access to a curated selection of invigorating yoga sessions led by experienced instructors. Immerse yourself in the calming embrace of various yoga styles, tailored to meet your individual needs. This trial empowers you to explore the myriad physical and mental benefits that yoga offers, from improved flexibility to stress relief. It's an opportunity to discover the positive impact that a regular yoga practice can have on your overall well-being. No hidden fees or obligations—just seven days of guided mindfulness to help you make an informed decision about incorporating yoga into your daily routine. Embrace this holistic journey, and let the transformative power of yoga unfold during your complimentary trial – because your well-being deserves this moment of self-care.</p>
+<p><ol><li><b>Risk-Free Exploration:</b> The 7-day yoga free trial allows you to explore our offerings risk-free, providing a firsthand experience of our yoga sessions without any financial commitment.</li>
+
+<li><b>Wellness at Your Pace:</b> Tailor your wellness journey with sessions catering to different skill levels and preferences, ensuring a personalized and comfortable experience for every participant.</li>
+
+<li><b>Expert Guidance:</b> Benefit from the expertise of experienced yoga instructors who guide you through each session, offering insights, corrections, and ensuring a fulfilling practice.</li>
+
+<li><b>Stress Relief and Mindfulness:</b> Immerse yourself in sessions designed to promote stress relief and mindfulness, experiencing the transformative benefits that regular yoga practice can bring to your mental and physical well-being.</li></ol></p>
+  </div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <div class="text">A 3 day workshop on advances in Computer Network technologies</div>
+  <img src="7.png">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <div class="text">Workshop on Cisco Packet Tracer for PG students</div>
+  <img src="8.png">
+  
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <div class="text">CCNA Network Fundamentals and Routing Protocols</div>
+  <img src="9.png">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <div class="text">enhancement of research competence in Networks Simulation </div>
+  <img src="10.png">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <div class="text">Nokia Workshop</div>
+   <img src="11.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <div class="text">Workshop on Blockchain</div>
+   <img src="12.png">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <div class="text">Addressing valedictory function of CSITSS</div>
+   <img src="13.png" >
+  
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+ <footer>
+    <div>
+      <ul>
+        <!-- Social Icons (Replace # with your actual social media links) -->
+        <li><a href="#" target="_blank"><img class="icon" src="facebook_icon.png" alt="Facebook"></a></li>
+        <li><a href="#" target="_blank"><img class="icon" src="twitter_icon.png" alt="Twitter"></a></li>
+        <li><a href="#" target="_blank"><img class="icon" src="instagram_icon.png" alt="Instagram"></a></li>
+      </ul>
+    </div>
+    
+    <!-- Copyright Information -->
+    <p style="color:black">&copy; 2024 All rights reserved.</p>
+
+    <!-- Navigation Links -->
+    
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="your.html">About</a></li>
+        <li><a href="contatct.html">Contact</a></li>
+      </ul>
+    
+  </footer> 
+
+</body>
+</html> 
